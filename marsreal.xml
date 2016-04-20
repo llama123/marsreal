@@ -12,13 +12,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="oled_drawtext" id="211">
-        <field name="TEXT">at schiaperalli</field>
-        <next>
-          <block type="movement_stop" id="51"></block>
-        </next>
-      </block>
-    </next>
   </block>
 </xml>
