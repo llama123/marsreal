@@ -1,29 +1,29 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="34" inline="true" x="123" y="99">
-    <value name="TIMES">
-      <block type="math_number" id="41">
-        <field name="NUM">100000</field>
+  <block type="movement_setmotors" id="254" inline="true" x="-21" y="81">
+    <value name="BOTHMOVLEFT">
+      <block type="math_number" id="261">
+        <field name="NUM">100</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="movement_forward" id="10">
-        <next>
-          <block type="movement_stop" id="243"></block>
-        </next>
+    <value name="BOTHMOVRIGHT">
+      <block type="math_number" id="268">
+        <field name="NUM">100</field>
       </block>
-    </statement>
+    </value>
     <next>
-      <block type="movement_setmotors" id="254" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="261">
-            <field name="NUM">100</field>
+      <block type="controls_repeat" id="34" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="41">
+            <field name="NUM">100000</field>
           </block>
         </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="268">
-            <field name="NUM">100</field>
+        <statement name="DO">
+          <block type="movement_forward" id="10">
+            <next>
+              <block type="movement_stop" id="243"></block>
+            </next>
           </block>
-        </value>
+        </statement>
         <next>
           <block type="movement_stop" id="278"></block>
         </next>
