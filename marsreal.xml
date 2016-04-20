@@ -8,22 +8,17 @@
     <statement name="DO">
       <block type="movement_forward" id="10">
         <next>
-          <block type="movement_stutter" id="91">
-            <next>
-              <block type="robot_delay" id="103" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="110">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
+          <block type="movement_stop" id="243"></block>
         </next>
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="51"></block>
+      <block type="oled_drawtext" id="211">
+        <field name="TEXT">at schiaperalli</field>
+        <next>
+          <block type="movement_stop" id="51"></block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
