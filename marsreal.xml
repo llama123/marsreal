@@ -6,13 +6,6 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="10">
-        <next>
-          <block type="movement_stop" id="243"></block>
-        </next>
-      </block>
-    </statement>
-    <next>
       <block type="movement_setmotors" id="254" inline="true">
         <value name="BOTHMOVLEFT">
           <block type="math_number" id="261">
@@ -24,7 +17,14 @@
             <field name="NUM">100</field>
           </block>
         </value>
+        <next>
+          <block type="movement_forward" id="10">
+            <next>
+              <block type="movement_stop" id="243"></block>
+            </next>
+          </block>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
